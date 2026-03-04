@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>MMA Fighter Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,83 @@
     <header class="main-header">
     <h1>MMA Fighter Database</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Fighters</a>
+        <a href="index.html">Home</a>
+        <a href="fighters.html">Fighters</a>
         <a href="#">Events</a>
     </nav>
     </header>
 
+    <div class="news-ticker">
+    <div class="ticker-content">
+        <span>BREAKING: </span>
+        <span>UFC 326 this Saturday!</span>
+        <span> - </span>
+        <span>Regina Tarin WINS debut match on only 3 days notice</span>
+        <span> - </span>
+        <span>Brandon Moreno falls to Lone'er Kavanagh</span>
+    </div>
+</div>
+
+    <div class="content-wrapper">
     <section class="hero-matchup">
-        <div class="event-info">
-        <h2>UFC 326: Main Event</h2>
+    <div class="event-info">
+        <p class="upcoming">Next Event</p>
+        <h2>UFC 326: MAIN EVENT</h2>
         <p>Saturday, March 7, 2026</p>
     </div>
+    
     <div class="versus-matchup">
-        <div class="fighter-card hero-card">
-            <img src="Images/CharlesOliveira.png" alt="Charles Oliveira" class="fighter-img">
-            <h2 class="fighter-name">Charles Oliveira</h2>
-            <span class="title-tag">Former Lightweight Champion</span> <div class="odds">+150</div> <ul class="fighter-stats">
+        <div class="hero-achievement">
+            <img src="Images/CharlesOliveira.png" alt="Charles Oliveira" class="hero-img">
+            <h3>Charles Oliveira</h3>
+            <p class="highlight-tag">FORMER LIGHTWEIGHT CHAMPION</p>
+            <ul class="achievements-list">
+                <li>Most Submissions in UFC History</li>
+                <li>Most Finishes in UFC History</li>
+                <li>Most Fight Bonuses in UFC History</li>
             </ul>
-            <ul class="fighter-stats">
-                <li><strong>Record:</strong> 36-11-0</li>
-                <li><strong>Weight Class:</strong> Lightweight</li>
-                <li><strong>Style:</strong> Brazilian Jiu-Jitsu</li>
-            </ul>
-            <button class="details-btn">View Full Stats</button>
         </div>
 
         <div class="versus-text">VS</div>
 
-        <div class="fighter-card hero-card">
-            <img src="Images/MaxHalloway.png" alt="Max Halloway" class="fighter-img">
-            <h2 class="fighter-name">Max Halloway</h2>
-            <span class="title-tag">BMF Champion</span> <div class="odds">-200</div> <ul class="fighter-stats">
+        <div class="hero-achievement">
+            <img src="Images/MaxHalloway.png" alt="Max Halloway" class="hero-img">
+            <h3>Max Halloway</h3>
+            <p class="highlight-tag">BMF CHAMPION</p>
+            <ul class="achievements-list">
+                <li>Most Significant Strikes in UFC History</li>
+                <li>Longest Winning Streak in Featherweight History</li>
+                <li>Legendary Fight IQ &amp; Durability</li>
             </ul>
-            <ul class="fighter-stats">
-                <li><strong>Record:</strong> 27-8-0</li>
-                <li><strong>Weight Class:</strong> Lightweight</li>
-                <li><strong>Style:</strong> Striker</li>
-            </ul>
-            <button class="details-btn">View Full Stats</button>
         </div>
     </div>
 </section>
+
+<aside class="rankings-sidebar">
+        <h3>Pound-for-Pound</h3>
+
+        <img src="Images/IslamMakhachev.png" alt="Islam Makhachev" class="p4p-champion-img">
+
+        <ol>
+            <li>Islam Makhachev</li>
+            <li>Ilia Topuria</li>
+            <li>Khamzat Chimaev</li>
+            <li>Alexander Volkanovski</li>
+            <li>Alex Pereira</li>
+            <li>Petr Yan</li>
+            <li>Merab Dvalishvili</li>
+            <li>Tom Aspinall</li>
+            <li>Alexandre Pantoja</li>
+            <li>Max Halloway</li>
+            <li>Joshua Van</li>
+            <li>Dricus Du Plessis</li>
+            <li>Magomed Ankalaev</li>
+            <li>Jack Della Maddalena</li>
+            <li>Arman Tsarukyan</li>
+        </ol>
+    </aside>
+
+</div>
 
     <div class="fighter-grid">
         <div class="fighter-card">
