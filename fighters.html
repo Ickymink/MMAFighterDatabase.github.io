@@ -5,7 +5,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="main-header">
@@ -16,5 +15,87 @@
         <a href="#">Events</a>
     </nav>
     </header>
+
+    <main class="fighter-db-container">
+        <aside class="fighter-list">
+            <div class="fighter-card">
+                <img src="Images/CharlesOliveira.png" alt="Charles Oliveira" class="fighter-img">
+                <h2 class="fighter-name">Charles Oliveira</h2>
+                <button class="details-btn" onclick="showProfile('CharlesOliveira-profile')">View Full Stats</button>
+            </div>
+            <div class="fighter-card">
+                <img src="Images/MaxHalloway.png" alt="Max Halloway" class="fighter-img">
+                <h2 class="fighter-name">Max Halloway</h2>
+                <button class="details-btn" onclick="showProfile('MaxHalloway-profile')">View Full Stats</button>
+            </div>
+        </aside>
+
+        <section class="fighter-profile" id="fighter-profile">
+            <div id="profile-placeholder">
+                <h2>Select a fighter to view details</h2>
+            </div>
+
+    <div id="CharlesOliveira-profile" class="full-profile" style="display:none;">
+        <div class="profile-header">
+            <img src="Images/CharlesOliveira.png" alt="Charles Oliveira" class="fighter-img">
+            <h2>Charles Oliveira</h2>
+            <img src="Images/Brazil.png" alt="Brazil Flag" class="flag-icon">
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box"><strong>Record:</strong><br>36-11-0</div>
+            <div class="stat-box"><strong>Height:</strong><br>5' 10"</div>
+            <div class="stat-box"><strong>Weight:</strong><br>156 lbs</div>
+            <div class="stat-box"><strong>Style:</strong><br>BJJ</div>
+        </div>
+
+        <div class="records-section">
+            <h3>UFC Accomplishments</h3>
+            <ul class="accomplishments-list">
+                <li>Most Submissions in UFC History</li>
+                <li>Most Finishes in UFC History</li>
+                <li>Most Fight Bonuses in UFC History</li>
+                <li>Former Lightweight Champion</li>
+            </ul>
+        </div>
+    </div>
+
+        <div id="MaxHalloway-profile" class="full-profile" style="display:none;">
+        <div class="profile-header">
+            <img src="Images/MaxHalloway.png" alt="Max Halloway" class="fighter-img">
+            <h2>Max Halloway</h2>
+            <img src="Images/US.png" alt="United States Flag" class="flag-icon">
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box"><strong>Record:</strong><br>27-8-0</div>
+            <div class="stat-box"><strong>Height:</strong><br>5' 11"</div>
+            <div class="stat-box"><strong>Weight:</strong><br>155 lbs</div>
+            <div class="stat-box"><strong>Style:</strong><br>Striker</div>
+        </div>
+
+        <div class="records-section">
+            <h3>UFC Accomplishments</h3>
+            <ul class="accomplishments-list">
+                <li>Most Significant Strikes in UFC History</li>
+                <li>Longest Winning Streak in Featherweight History</li>
+                <li>Current BMF Champion</li>
+                <li>Former Featherweight Champion</li>
+            </ul>
+        </div>
+    </div>
+        </section>
+    </main>
+
+    <script>
+        function showProfile(id) {
+            // 1. Hide placeholder
+            document.getElementById('profile-placeholder').style.display = 'none';
+            // 2. Hide all other profiles
+            document.querySelectorAll('.full-profile').forEach(p => p.style.display = 'none');
+            // 3. Show selected
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
